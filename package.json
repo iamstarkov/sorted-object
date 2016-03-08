@@ -20,6 +20,7 @@
     "lint": "jshint lib && jshint test"
   },
   "devDependencies": {
+    "deep-strict-equal": "^0.1.0",
     "jshint": "~2.4.3",
     "tape": "~2.4.2"
   }

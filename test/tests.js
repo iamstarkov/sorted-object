@@ -2,6 +2,7 @@
 
 var test = require("tape");
 var sortedObject = require("..");
+var deepStrictEqual = require("deep-strict-equal");
 
 test("does not return the same object", function (t) {
     var input = {};
@@ -15,8 +16,8 @@ test("works for empty objects", function (t) {
     t.end();
 });
 
-test("returns an object with null prototype", function (t) {
-    t.equal(Object.getPrototypeOf(sortedObject({})), null);
+test("returns an object which is deepStrictEqual to target one", function (t) {
+    deepStrictEqual((sortedObject({})), {});
     t.end();
 });
 
