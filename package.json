@@ -22,5 +22,11 @@
   "devDependencies": {
     "jshint": "~2.4.3",
     "tape": "~2.4.2"
+  },
+  "dependencies": {
+    "es-dep-kit": "^1.0.1",
+    "es-dep-unit": "^2.0.0",
+    "es-deps-deep": "^2.0.0",
+    "globby": "^4.0.0"
   }
 }
